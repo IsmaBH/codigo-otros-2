@@ -1,4 +1,10 @@
-var formulario = document.querySelector("#form")
+var formulario = document.querySelector("#form");
+
+//Se crea un eventListener 
+formulario.addEventListener("submit", function(event) {
+  event.preventDefault();
+  console.log(formulario.elements[0]);
+});
 
 formulario.onsubmit = function(e) {
 
